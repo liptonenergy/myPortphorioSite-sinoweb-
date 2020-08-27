@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <meta name ="description" content="sinowebは、中小規模のWebサイト制作に特化したフリーランスのプロダクションです。デザイン～実装はもちろん、ワード選定もお任せください。制作会社様からのご依頼もお待ちしております。">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="icon" href="UI-parts/icon.ico">
+  <link rel="apple-touch-icon" href="UI-parts/favicon-iphone-touch.png">
+  <!-- google fonts  -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>sinoweb</title>
+ </head>
+
+ <body>
+  <header>
+    <!-- loadanime -->
+    <div id="loading-animation">
+      <div class="loading-animation__wrapper">
+        <div class="logo-left">
+          <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90"><defs></defs><path class="logo-left__color" d="M45,0C69.853,0,90,11.193,90,25V90L0,25C0,11.193,20.147,0,45,0Z" transform="translate(0 90) rotate(-90)"/></svg>
+        </div>
+        <div class="logo-right">
+          <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90"><defs></defs><path class="logo-right__color" d="M45,0C69.853,0,90,11.193,90,25V90L0,25C0,11.193,20.147,0,45,0Z" transform="translate(90) rotate(90)"/></svg>
+        </div>
+      </div>
+    </div>
+
+   <div class="header-contents" id="nav__top">
+     <a href="#" class="site-title__hover">
+       <h1 class="site-title__hover--font">sinoweb</h1>
+       <div class="site-title__hover--logo">
+         <svg class="site-logo__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 32"><defs></defs><g transform="translate(-1025 -444)"><path class="site-logo-right" d="M16,0c8.837,0,16,4.017,16,8.973V32.3L0,8.973C0,4.017,7.163,0,16,0Z" transform="translate(1070 444) rotate(90)"/><path class="site-logo-left" d="M16,0c8.837,0,16,4.017,16,8.973V32.3L0,8.973C0,4.017,7.163,0,16,0Z" transform="translate(1025 476) rotate(-90)"/></g></svg>
+       </div>
+     </a>
+
+    <!-- 左側サイドバー -->
+    <div class="fix-nav"> 
+     <!-- ドロワーメニュー -->
+     <div class="fix-nav__nav-menu">
+      <!-- menu open line -->
+      <div class="nav-menu__open-btn" id="is-nav__open">
+        <span class="open__btn--line line1"></span>
+        <span class="open__btn--line line2"></span>
+      </div>
+      <span class="guide-bar">OpenMenu</span>
+
+      <!-- メニューの中身 -->
+      <div id="nav-menu__bg">
+        <div class="nav-menu__list">
+        <div><a href="#nav__top" class="nav-menu__list--item">Top</a></div>
+        <div><a href="#nav__service" class="nav-menu__list--item">Service</a></div>
+        <div><a href="#nav__flow" class="nav-menu__list--item">Flow</a></div>
+        <div><a href="#nav__connect" class="nav-menu__list--item">Connect</a></div>
+        </div>
+     </div>
+
+    </div>
+    
+      <!-- SNSなどリンクボタン -->
+      <ul class="social-link__list">
+        <li><a href="https://twitter.com/sinoweb__2020" class="social-link__list--item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45"><defs></defs><g transform="translate(64 120.178)"><path class="icon-bg" d="M22.5,0A22.5,22.5,0,1,1,0,22.5,22.5,22.5,0,0,1,22.5,0Z" transform="translate(-64 -120.178)"/><path class="inner-line" d="M24,3.131a9.845,9.845,0,0,1-2.828.775,4.938,4.938,0,0,0,2.165-2.724A9.86,9.86,0,0,1,20.21,2.377,4.928,4.928,0,0,0,11.82,6.868,13.979,13.979,0,0,1,1.671,1.723,4.929,4.929,0,0,0,3.195,8.3a4.9,4.9,0,0,1-2.23-.616c0,.021,0,.041,0,.062a4.927,4.927,0,0,0,3.95,4.828,4.936,4.936,0,0,1-2.224.084,4.929,4.929,0,0,0,4.6,3.42,9.88,9.88,0,0,1-6.115,2.108A10.018,10.018,0,0,1,0,18.114a13.937,13.937,0,0,0,7.548,2.212A13.914,13.914,0,0,0,21.557,6.317q0-.32-.014-.637A10.008,10.008,0,0,0,24,3.131" transform="translate(-53 -107.133)"/></g></svg>
+        </a></li>
+
+        <li><a href="https://www.instagram.com/sinoweb.insta/" class="social-link__list--item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45"><g transform="translate(-1052 -455)"><path class="icon-bg" d="M22.5,0A22.621,22.621,0,0,1,37.338,5.586,22.5,22.5,0,1,1,22.5,0Z" transform="translate(1052 455)"/><g transform="translate(1062.5 465.5)"><path class="inner-line" d="M12,2.162c3.2,0,3.584.012,4.849.07a6.643,6.643,0,0,1,2.228.413,3.719,3.719,0,0,1,1.38.9,3.718,3.718,0,0,1,.9,1.38,6.641,6.641,0,0,1,.413,2.228c.058,1.265.07,1.645.07,4.849s-.012,3.584-.07,4.849a6.641,6.641,0,0,1-.413,2.228,3.974,3.974,0,0,1-2.277,2.277,6.639,6.639,0,0,1-2.228.413c-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07a6.638,6.638,0,0,1-2.228-.413,3.717,3.717,0,0,1-1.38-.9,3.718,3.718,0,0,1-.9-1.38,6.64,6.64,0,0,1-.413-2.228c-.058-1.265-.07-1.645-.07-4.849s.012-3.584.07-4.849a6.64,6.64,0,0,1,.413-2.228,3.718,3.718,0,0,1,.9-1.38,3.718,3.718,0,0,1,1.38-.9,6.641,6.641,0,0,1,2.228-.413C8.416,2.174,8.8,2.162,12,2.162M12,0C8.741,0,8.332.014,7.052.072A8.808,8.808,0,0,0,4.139.63,5.882,5.882,0,0,0,2.014,2.014,5.882,5.882,0,0,0,.63,4.14,8.808,8.808,0,0,0,.072,7.052C.014,8.332,0,8.741,0,12s.014,3.668.072,4.948A8.808,8.808,0,0,0,.63,19.86a5.883,5.883,0,0,0,1.384,2.125A5.882,5.882,0,0,0,4.139,23.37a8.807,8.807,0,0,0,2.913.558C8.332,23.986,8.741,24,12,24s3.668-.014,4.948-.072a8.807,8.807,0,0,0,2.913-.558,6.136,6.136,0,0,0,3.51-3.51,8.809,8.809,0,0,0,.558-2.913C23.986,15.668,24,15.259,24,12s-.014-3.668-.072-4.948A8.809,8.809,0,0,0,23.37,4.14a5.882,5.882,0,0,0-1.384-2.125A5.882,5.882,0,0,0,19.86.63,8.808,8.808,0,0,0,16.948.072C15.668.014,15.259,0,12,0Zm0,5.838A6.162,6.162,0,1,0,18.162,12,6.162,6.162,0,0,0,12,5.838ZM12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16ZM19.846,5.594a1.44,1.44,0,1,1-1.44-1.44A1.44,1.44,0,0,1,19.846,5.594Z" transform="translate(0 0)"/></g></g></svg>
+        </a></li>
+      
+        <li><span class="social-link__list--item guide-bar">Social</span></li>
+       </ul>
+    
+    </div>
+    
+    <!-- アニメーションフォント -->
+   <div class="header-contents__anime-fonts">
+    <section class="motion__item word1">
+      <h3 class="js-scroll">
+        <span class="motion-txt">
+          <span class="motion-inner">「伝えたい」をカタチに。</span>
+        </span>
+      </h3>
+    </section>
+      <section  class="motion__item word1">
+        <h3 class="js-scroll">
+          <span class="motion-txt">
+            <span class="motion-inner">「伝えたい」をカタチに。</span>
+          </span>
+        </h3>
+    </section>
+    <section  class="motion__item word1">
+      <h3 class="js-scroll">
+        <span class="motion-txt">
+          <span class="motion-inner">「伝えたい」をカタチに。</span>
+        </span>
+      </h3>
+    </section>
+
+    <section  class="motion__item word2">
+      <h3 class="js-scroll">
+        <span class="motion-txt">
+          <span class="motion-inner">どこまでも真っすぐに。</span>
+        </span>
+      </h3>
+    </section>
+
+      <section class="motion__item word2">
+        <h3 class="js-scroll">
+          <span class="motion-txt">
+            <span class="motion-inner">どこまでも真っすぐに。</span>
+          </span>
+        </h3>
+    </section>
+
+      <section class="motion__item word2">
+      <h3 class="js-scroll">
+        <span class="motion-txt">
+          <span class="motion-inner">どこまでも真っすぐに。</span>
+        </span>
+      </h3>
+    </section>
+   </div>
+
+   <span class="sc-arrow__PC">Scroll</span>
+  <!-- mobile only -->
+   <span class="sc-arrow">Scroll</span>
+   <div class="site-title__mobile">
+    <h1 class="site-title__mobile--item">sinoweb<br><span class="subtitle">シノウェブ</span></h1>
+   </div>
+  <!-- mobile only end -->
+ 
+     <div class="header-content__text">
+      <h4 class="header-content__text--ttl isFadeIn">Welcome to our site!!</h4>
+       <p class="header-content__text--item isFadeIn">sinoweb(シノウェブ)はフリーランスエンジニア/デザイナーの篠田が運営する、中小規模のWebサイト/LP制作に特化した個人事業です。制作会社様から個人のお客様まで、日本全国どなたからでもご依頼をお承りしております。</p>
+
+       <div class="header-content__missions">
+         <h4 class="header-content__missions--ttl isFadeIn">Our Missions</h4>
+         <p class="header-content__missions--text isFadeIn">sinowebのミッションは、</p>
+         <h5 class="header-content__missions--strong isFadeIn">「クライアントの想いをカタチにする」</h5>
+         <p class="header-content__missions--text isFadeIn">そして、</p>
+         <h5 class="header-content__missions--strong isFadeIn">「クライアントと共に目標を達成する」</h5>
+         <p class="header-content__missions--text isFadeIn">ことであると考えています。小規模だからこそできる柔軟さ、共有力や共感力の高さを強みに、お客様の目標達成をサポート致します。</p>
+       </div>
+     </div>
+
+    </div>
+  </div>
+  <div class="fix-bg">
+    <div class="fix-bg__left">
+      <svg class="fix-bg__left--svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><path class="fix-bg__left--color" d="M250,0C388.071,0,500,62.183,500,138.889V500L0,138.889C0,62.183,111.929,0,250,0Z" transform="translate(0 500) rotate(-90)"/></svg>
+   
+    </div>
+
+    <div class="fix-bg__right">
+      <svg class="fix-bg__right--svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><path class="fix-bg__right--color" d="M250,0C388.071,0,500,62.183,500,138.889V500L0,138.889C0,62.183,111.929,0,250,0Z" transform="translate(500) rotate(90)"/></svg>
+    </div>
+  </div>
+  
+  </header>
+
+<!-- メインセクション -->
+  <main class="main__container">
+    <!-- サービスセクション -->
+    <div class="section__wrapper" id="nav__service">
+      <h2 class="section__title">01. Services</h2>
+    <div class="service">
+      <div class="service__item isFadeIn">
+        <img class="service__item--icon" src="UI-parts/HMTLtag.svg">
+        <h3 class="service__item--title">Coding<br><span class="subtitle">コーディング</span></h3>
+        <p class="service__item--text">Webサイトの構築に不可欠なコーディング業務を承っております。一時的にコーダーが足りなくなった、既存サイトの加筆・修正をしてほしいなど様々ケースに対応致します。</p>
+      </div>
+
+      <div class="service__item isFadeIn">
+        <img class="service__item--icon" src="UI-parts/design-icon.svg">
+        <h3 class="service__item--title">Design<br><span class="subtitle">デザイン・UI/UX設計</span></h3>
+        <p class="service__item--text">デザインのご相談も随時お承りしております。お客様が携わる事業のイメージを壊さないことを前提に、訪れた人を感動させる工夫を織り込んだデザインをご提案させていただきます。</p>
+      </div>
+
+      <div class="service__item isFadeIn">
+        <img class="service__item--icon" src="UI-parts/wordpress-icon.svg">
+        <h3 class="service__item--title">WordPress<br><span class="subtitle">ワードプレス</span></h3>
+       <p class="service__item--text">WordPressを使ったご案件もお承りしております。サイトのカスタマイズや既存サイトのWordPress化など、あらゆるニーズに対応致します。</p>
+      </div>
+
+      <div class="service__item isFadeIn">
+        <img class="service__item--icon" src="UI-parts/bill-icon.svg">
+        <h3 class="service__item--title">Corporate<br><span class="subtitle">コーポレートサイト制作</span></h3>
+        <p class="service__item--text font-text">デザインに古さを感じる御社のWebサイト、当方でモダンにリニューアルしてみませんか？事業スタイルに合わせた無駄のない運用プランもご提案いたします。もちろん新規事業のご案件も歓迎しております。</p>
+      </div>
+
+      <div class="service__item isFadeIn">
+        <img class="service__item--icon" src="UI-parts/LP-icon.svg">
+        <h3 class="service__item--title">LandingPage<br><span class="subtitle">ランディングページ制作</span></h3>
+        <p class="service__item--text font-text">ランディングページの制作もお任せください。ご依頼頂いたプロダクトで達成したい目的などをヒアリングさせて頂くとともに、競合調査やターゲット設定を行い「結果」の出せるランディングページを制作致します。</p>
+      </div>
+    </div>
+   </div>
+
+
+   <div class="section__wrapper" id="nav__flow">
+    <!-- セクションタイトル -->
+    <h2 class="section__title">02.Flow</h2>
+    <!-- フロウセクション -->
+    <div class="flow">
+      <div class="flow__item isFadeIn">
+        <h3 class="flow__item--title">01.Plan<br><span class="subtitle__flow">計画</span></h3>
+          <img class="flow__item--icon" src="UI-parts/planpeaper.svg">
+          <p class="flow__item--text font-text">まずはヒアリングから。お客様が求めるWebサイトの規模感や機能要件、ビジュアルイメージなどをお伺いします。また、お客様の事業についても詳しくお伺いさせて頂き、御社の強みやアピールポイントをリストアップしていきます。この段階でおおよその予算や工期もご提案させていただきます。</p>   
+      </div>
+
+      <div class="flow__item isFadeIn">
+       <h3 class="flow__item--title">02.Design<br><span class="subtitle__flow">デザイン</span></h3>
+       <img class="flow__item--icon" src="UI-parts/flow-design-icon.svg">
+       <p class="flow__item--text font-text">予算の見積りや計画に問題が無ければ、デザインの設計・キャッチコピーの選定から着手します。デザインが概ね完成した段階でお客様にもご確認頂き、変更してほしい箇所などがあれば修正を行います（修正のリクエストは2回まで無料とさせていただきます）。デザイン・キャッチコピーにご納得頂ければ、実装のフローへと移行します。</p>
+      </div>
+
+      <div class="flow__item isFadeIn">
+       <h3 class="flow__item--title">03.Build<br><span class="subtitle__flow">実装作業</span></h3>
+       <img class="flow__item--icon" src="UI-parts/flow-build-icon.svg">
+       <p class="flow__item--text font-text">制作したデザインカンプをもとに、コーディングや機能の実装を行います。コーディングが終わり次第動作チェック、バグチェックなどを行い、問題なければ公開準備となります。</p>
+      </div>
+
+      <div class="flow__item isFadeIn">
+       <h3 class="flow__item--title">04.Deploy<br><span class="subtitle__flow">公開</span></h3>
+       <img class="flow__item--icon" src="UI-parts/flow-deploy-icon.svg">
+       <p class="flow__item--text font-text">本番用のサーバーにアップロードし公開となります。サーバーのご用意がないお客様や、サーバー管理を任せたいというご要望にもプランをご用意させて頂いておりますので、お気軽ご相談ください。最もお得な運用方法をご提案致します。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section__wrapper" id="nav__connect">
+    <!-- セクションタイトル -->
+    <h2 class="section__title">03. Connect</h2>
+    <!-- コネクトセクション -->
+    <div class="connect section__wrapper">
+    
+       <p class="connect__text isFadeIn">お問い合わせは各種SNSのダイレクトメッセージ又は下記のメールアドレスよりお承りしております。ご依頼やご質問などお気軽にお問い合わせください。ざっくりとした内容でも結構です。</p>
+      
+      <div class="connect__sns-link">
+       
+        <div class="sns-link__item isFadeIn">
+         <a href="https://twitter.com/sinoweb__2020" class="sns-link__item--hv">
+          <img src="UI-parts/twitter-fotterIcon.svg">
+          <p class="sns-link__item--url">https://twitter.com/shinoda_ari</p>
+         </a>
+        </div>
+        <div class="sns-link__item isFadeIn">
+         <a href="https://www.instagram.com/sinoweb.insta/" class="sns-link__item--hv">
+          <img src="UI-parts//insta-fotterIcon.svg">
+          <p class="sns-link__item--url">https://www.instagram.com/sinoweb.insta/</p>
+         </a>
+        </div>
+        <div class="sns-link__item isFadeIn">
+         <a class="sns-link__item--hv">
+          <img src="UI-parts/google-gmail-icon.svg">
+          <p class="sns-link__item--url">sinoweb.2020@gmail.com</p>
+         </a>
+        </div>
+     
+      </div>
+      <div class="connect__about-me isFadeIn">
+       <div class="about-me__ttl">- About -</div>
+       
+       <div class="about-me__item">
+         <div class="about-me__img">
+           <img src="UI-parts/IMG_8261.JPG">
+         </div>
+         <div class="about-me__flex">
+           <div class="about-me__flex--names">
+            <h4>代表者:篠田亜理伊（Ari Shinoda）</h4>
+            <h4>出自:1995.4.27日生/鳥取県米子市出身</h4>
+            <h4>大阪市大阪府西区在住</h4>
+           </div>
+           <div class="about-me__flex--text"><p>独学からプログラミング/デザインの世界に足を踏み入れ、気づけば独立していました。単にコードが書ける、デザインができるということだけでなく、お仕事の中で生まれるコミュニケーションを大切にしてます。趣味はギターとパソコン、サバゲ―などなど。</p></div>
+         </div>
+        </div>
+       
+      </div>
+    </div>
+   </div>
+  </main>
+
+  <div class="section__wrapper">
+   <footer class="footer-contents--item">©sinoweb 2020</footer>
+  </div>
+  
+  <!-- javascript file source -->
+   <script src="js/main.js" type="text/javascript"　defer></script>
+   <script
+   src="https://code.jquery.com/jquery-3.5.1.min.js"
+   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+   crossorigin="anonymous"></script>
+ </body>
+</html>

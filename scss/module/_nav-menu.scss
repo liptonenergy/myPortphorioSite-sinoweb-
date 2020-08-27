@@ -1,0 +1,311 @@
+  .fix-nav {
+  @include hover-pre;
+  position: fixed;
+  z-index: 5;
+  pointer-events: none;
+  padding-top: 1rem;
+  left: 0;
+  top: 0;
+  width: 5rem;
+  height: 40rem;
+  background: #f6f6f6;
+  box-shadow: .5px 1px 3px rgba(78, 78, 78, 0.137);
+
+    .social-link__list {
+    padding: 4rem 0 0 0;
+    margin-left: .8rem;
+    list-style-type: none;
+    pointer-events: auto;
+
+      &--item{
+        list-style-type: none;
+        margin: .7rem auto;
+        padding: 0rem;
+      }
+
+      .guide-bar {
+        @include guide-bar;
+        margin-left: 1.4rem;
+      }
+    }
+  }
+
+  .fix-nav:hover {
+    @include hover-after;
+    @include acsent-blue;
+  }
+
+
+  .fix-nav__nav-menu {
+    margin: 2rem auto;
+    padding-top: 3rem;
+
+    .guide-bar { 
+      @include guide-bar;
+      margin-left: 2.2rem;
+      margin-top: 5rem;
+    }
+  }
+
+  //ドロワーメニュー　２本線
+  .nav-menu__open-btn {
+    position: absolute;
+    cursor: pointer;
+    z-index: 600;
+    left: .9rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    pointer-events: auto;
+  }
+
+  .open__btn--line {
+    position: absolute;
+    width: 2.6rem;
+    left:.1rem;
+    transition: all .6s;
+    height: .38rem;
+    border: .07rem solid #000000;
+  }
+
+  .line1 {
+    top: .85rem;
+    left: .25rem
+  }
+
+  .line2 {
+    top: 1.8rem;
+    left: .25rem
+  }
+
+  .active .line1 {
+    transform: rotate(45deg);
+    top: 1.4rem;
+  }
+    .active .line2 {
+    transform: rotate(-45deg);
+    top: 1.4rem;
+  }
+  
+ //メニュー
+  #nav-menu__bg {
+    position: fixed;
+    pointer-events: auto;
+    height: 100vh;
+    width: 100%;
+    left: 6%;
+    top:0%;
+   @include bg-black;                      
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 500;
+    overflow: hidden;
+  }
+  
+ #nav-menu__bg.active {
+   visibility: visible;
+   opacity: 100;
+  }
+  
+  .nav-menu__list {
+   position: absolute;
+   pointer-events: auto;
+   left: 15%;
+   top: 10%;
+   width: 60%;
+   transition: all .6s;
+   @include col-flex(100% , 0 auto , 0 , center);//$width , $margin , $padding ,$jus-cont
+  }
+
+  .nav-menu__list--item {
+    @include item__title(6rem auto , .2rem 2rem , 100% , .12rem);  //($margin , $padding , $width , $ls)
+    @include text-white;
+    @include hover-pre;
+    text-decoration: none; 
+    font-family: 'roboto-bold',sans-serif !important;
+    font-weight: bold;
+    pointer-events: auto;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 6rem;
+    letter-spacing: .2rem;
+    border-radius: 2rem;
+   }
+
+   .nav-menu__list--item:hover {
+     @include acsent-blue;
+     @include text-black;
+     @include hover-after;
+   }
+
+//nav sns icon
+     path.inner-line {
+       fill: #000000;
+      //  stroke:#1d1d1d;
+       stroke-linejoin:round;
+       stroke-width: .02rem;
+       transition: ease-in-out .7s;
+      }
+      
+      .icon-bg {
+        opacity: 0;
+        transition: ease-in-out .7s;
+      }
+      
+      svg:hover .inner-line {
+        fill: #f6f6f6;
+        opacity: 1;
+        transition: linear, .3s;
+        transition-duration: .4s;    
+      }
+  
+
+
+
+ /////media query of _main.scss////↓↓////media query of _main.scss/////
+
+  //sm view(BP:544px)
+  @include screen-mq(sm) {
+    #nav-menu__bg  {
+      left: 0%;
+    }
+
+    .active .line1 {
+      border-color: #fff;
+    }
+
+    .active .line2 {
+      border-color: #fff;
+    }
+
+    .fix-nav{
+      background: none;
+      box-shadow: none;
+
+      .social-link__list {
+        padding: 10rem 0 0 0;
+        margin-left: .2rem;
+        width: 10%;
+      }
+    }
+  
+    .fix-nav:hover {
+      background: none;
+    }
+  
+    .fix-nav__nav-menu {
+      .guide-bar {
+        display: none;
+      }
+    }
+  
+    .nav-menu__open-btn {
+      top: 50%;
+      left: 10% !important;
+      top: .8%;
+    }
+   }
+   
+  //sm sideway
+   @media (orientation: landscape) and (max-width: 900px) {
+    .fix-nav{
+      background: none;
+      box-shadow: none;
+  
+      .social-link__list {
+        padding: 0;
+        margin-top: 0;
+        margin-left: .8rem;
+        list-style-type: none;
+        pointer-events: auto;
+      }
+
+      .fix-nav__nav-menu {
+        .guide-bar {
+          display: none;
+        }
+      }
+    }
+  
+    .nav-menu__open-btn {
+      top: 0%;
+    }
+  
+    .fix-nav:hover {
+      background: none;
+    }
+
+    .active .line1 {
+      border-color: #fff;
+     }
+     .active .line2 {
+      border-color: #fff;
+     }
+   }
+
+   //iphone5,se sideway
+   @media (orientation: landscape) and (max-width: 568px) {
+    .fix-nav{
+     
+      .social-link__list {
+        padding: 0;
+      }
+    }
+  }
+
+  
+
+  
+   @media (orientation: landscape) and (max-width: 1024px) {
+    #nav-menu__bg  {
+      left: 0%;
+    }
+
+    .nav-menu__list--item {
+      @include item__title(1rem auto , .2rem 2rem , 100% , .12rem);  //($margin , $padding , $width , $ls)
+      line-height: 4rem;
+      font-size: 2rem;
+    }
+
+    .social-link__list {
+      padding: 0;
+    }
+   }
+  
+  //for iPad pro
+   @media (max-height: 1024px) and(min-height: 1020px ) {
+    .fix-nav{
+      background: none;
+      box-shadow: none;
+
+      
+      .social-link__list {
+        padding: 10rem 0 0 0;
+        margin-left: 1rem;
+        width: 10%;
+      }
+    }
+
+    .fix-nav:hover {
+      background: #ffffff00;
+    }
+  }
+  
+  //for iPad pro　sideway
+   @media (max-width: 1024px) and(min-width: 1020px ) {
+    .fix-nav{
+      background: none;
+      box-shadow: none;
+
+      .social-link__list {
+        padding: 5rem 0 0 0;
+        margin-left: 1rem;
+        width: 10%;
+      }
+    }
+    .fix-nav:hover {
+      background: #ffffff00;
+    }
+  }

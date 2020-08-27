@@ -1,0 +1,256 @@
+
+  .main__container {
+    @include mW-standard;
+  }
+
+  .section__wrapper {
+    margin: 0 auto;
+    width: 85%;
+    padding: 5rem auto;
+    position: relative;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .section__title {
+    margin: 3rem auto;
+    padding: .25rem .5rem;
+    width: 25%;
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    @include bg-black;
+    @include text-white;
+    font-family: 'roboto-b-ita';
+  }
+
+  .service {
+    @include row-flex(100% , 0 auto , 0 , center); //$width , $margin , $padding ,$jus-cont
+    flex-wrap: wrap;
+    pointer-events: auto;
+  
+      .service__item {
+        @include col-flex(30% , 2rem , 1rem , flex-start); //$width , $margin , $padding , jus-cont
+        @include hover-pre;
+        flex: 1 1 285px;
+        flex: 0 1 285px;
+        text-align: center;
+        
+        &--icon {
+          @include item__icon( 0 auto , 0); //$margin , $padding
+          }
+
+        &--title {
+          @include item__title(1rem auto , 0 , 100% , .12rem);  //($margin , $padding , $width , $ls)
+          text-align: center;
+          font-size: 1.1rem;
+          font-family: 'roboto-medium',sans-serif !important;
+
+            .subtitle {
+              font-size: .7rem;
+              font-weight: 500;
+              font-family: 'Noto Sans JP',sans-serif;
+            }
+          }
+
+        &--text {
+          @include item__text(90%, 0 , 1rem auto , 1.9rem , .1rem); //($width , $padding ,$margin , $lh , $ls
+          text-align: left;
+          }
+      }
+
+      .service__item:hover {
+        background: #f6f6f6d0;
+        @include hover-after;
+        @include shadow-set1;
+      }
+  }
+
+
+
+  .flow {
+    @include row-flex(100% , 0 auto , 3rem 0 , center); //width , margin , padding ,$jus-cont
+    flex-wrap: wrap;
+    
+      &__item {
+        @include col-flex(25% , 1rem .5rem , 0 , flex-start); //width , margin , padding ,$jus-cont
+        height: auto;
+        background: #f8f8f8;
+        border: .25rem solid  #000000;
+        @include shadow-set1;
+        flex: 1 1 250px;
+        flex: 0 1 250px;
+
+          &--icon {
+           @include item__icon(0 auto , 0); //$margin , $padding
+          }
+
+          &--title { 
+            @include item__title( 0 auto 1rem auto , .5rem 0, 100% , .2rem );  //$margin , $padding , $width , $ls
+            @include text-white;
+            background: #000000;
+            font-family: 'roboto-b-ita', sans-serif !important;
+ 
+            .subtitle__flow {
+              font-size: .7rem;
+              font-weight: 500;
+              font-family: 'Noto Sans JP',sans-serif;
+            }
+            
+          }
+
+          &--text {
+            @include item__text(80% , 0 , 1rem auto, 1.65rem , .15rem); //$width , $padding ,$margin , $lh , $ls
+            font-size: .75rem;
+          }
+      }
+  }
+
+
+
+
+
+  .connect {
+  @include col-flex(100% , 0 auto , 3rem auto , center);//$width , $margin , $padding ,$jus-cont
+        
+    &__text {
+      @include item__text(60% , 2rem , 3rem auto , 1.8rem , .1rem ); //$width , $padding ,$margin , $lh , $ls
+      background: #fff;
+      border: .09rem solid #000;
+    }
+  }
+
+  .connect__sns-link {
+    @include row-flex(100% , 0 auto , 0 , center); //$width , $margin , $padding ,$jus-cont
+    flex-wrap: wrap;
+    pointer-events: auto;
+    
+      .sns-link__item--hv {
+        pointer-events: auto;
+        cursor: pointer;
+        @include row-flex(30% , 1rem 3rem , 0 , flex-start); //$width , $margin , $padding ,$jus-cont
+        @include text-black;
+        font-family: 'roboto-medium';
+        text-decoration: none;
+        opacity: .8;
+      }
+
+      p.sns-link__item--url {
+        margin:0;
+        padding-left: .5rem;
+      }
+
+      .sns-link__item--hv:hover{
+        opacity: 1;
+        text-decoration: underline;
+      }
+  }
+
+
+
+  .connect__about-me {
+    @include col-flex(80% , 0 auto , 0 , left); //$width , $margin , $padding ,$jus-cont
+  
+    .about-me__ttl {
+      text-align: center;
+      margin: 2rem auto 1rem auto;
+      font-size: 1rem;
+      letter-spacing: .2rem;
+    }
+  
+    .about-me__item {
+      flex-wrap: wrap;
+      flex: 0 1 100px;
+      flex: 1 1 100px;
+      @include row-flex(80% , 0 auto , 0 , left);  //$width , $margin , $padding ,$jus-cont
+
+        &__img {
+          margin: 1rem 0;
+          text-align: center;
+        }
+
+        .about-me__flex {
+          @include col-flex(100% , 0 , 0 , left); //$width , $margin , $padding ,$jus-cont
+          flex-wrap: wrap;
+
+            &--names h4 {
+              margin: 0;
+              text-align: left;
+            }
+
+            &--text {
+              @include item__text(100% , 0 , 0 , 1.3rem , .1rem); //$width , $padding ,$margin , $lh , $ls
+              text-align: left;
+            }
+        }
+      }
+  }
+
+  .footer-contents--item {
+    @include item__text(80% , 0 , 0 auto
+    , 0 auto, .1rem);
+    @include text-gray;
+    font-size: .6rem;
+  }
+
+
+  /////media query of _main.scss////↓↓////media query of _main.scss/////
+
+  //sm view(BP:544px)
+  @include screen-mq(sm) {
+    .section__title {
+      margin: 0 auto;
+      text-align: center;
+      width: 80%;
+    }
+
+    .service__item {
+      width: 60%;
+      margin: .5rem 0;
+      pointer-events:none;
+      background: rgba(0, 0, 0, 0.835);
+
+        &--icon {
+          width: 90%;
+          text-align: center;
+        }
+
+        &--title {
+          @include item__title(1rem auto , 0 , 100% , .12rem);  //($margin , $padding , $width , $ls)
+          text-align: center;
+          @include text-white;
+
+            .subtitle {
+              font-size: .5rem;
+              font-weight: normal;
+            }
+          }
+          
+          &--text {
+            text-align: left !important;
+            font-size: .9rem;
+            @include text-white;
+            @include item__text(100%, 0 , 2rem auto , 4rem , .1rem); //($width , $padding ,$margin , $lh , $ls
+          }
+          
+          .service__item:hover {
+            display: none;
+          }
+        }
+
+        .connect__sns-link {
+          .sns-link__item--hv {
+            margin: 1rem 0;
+          }
+    
+        }
+      }
+
+
+
+//sm view(BP:320px) for iPhone5,SE
+  @include screen-mq(xs) {
+    .flow {
+      width: 95%;
+    }
+   }

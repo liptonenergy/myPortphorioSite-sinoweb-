@@ -1,0 +1,37 @@
+
+//backgrounds
+@mixin bg-white {
+ background-color: #f5f5f5;
+}
+
+@mixin bg-black {
+ background-color: #0a0a0a;
+}
+
+
+// acsent color
+@mixin acsent-blue {
+ background-color: #31baf0;
+}
+
+@mixin fill-acsent-blue {
+ fill: #31baf0;
+}
+
+@mixin fill-gray {
+ fill: #707070;
+}
+
+
+//text,fonts
+@mixin text-gray {
+ color: #616161;
+}
+
+@mixin text-black {
+ color: #050505;
+}
+
+@mixin text-white {
+ color: #f3f3f3;
+}

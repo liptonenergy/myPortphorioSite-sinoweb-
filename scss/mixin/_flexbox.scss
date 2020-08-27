@@ -1,0 +1,47 @@
+@mixin row-flex($width , $margin , $padding , $jus-cont) {
+ display: flex;
+ flex-direction: row;
+ justify-content: $jus-cont;
+ width: $width;
+ margin: $margin;
+ padding: $padding;
+}
+
+@mixin col-flex($width , $margin , $padding , $jus-cont) {
+ display: flex;
+ flex-direction: column;
+ justify-content: $jus-cont;
+ width: $width;
+ margin: $margin;
+ padding: $padding;
+}
+
+
+// セクション内アイテム　タイトル
+@include  font-face('noto-bold', '../fonts/Noto_Sans_JP/NotoSansJP-bold.otf', null, null, otf);
+
+@mixin item__icon($margin , $padding) {
+ margin: $margin;
+ padding: $padding;
+ text-align: center;
+}
+
+@mixin item__title($margin , $padding , $width , $ls) {
+ font-size: 1rem;
+ font-family: 'noto-bold';
+ letter-spacing: $ls;
+ margin: $margin;
+ width: $width;
+ text-align: center;
+ padding: $padding;
+}
+
+@mixin item__text($width , $padding ,$margin , $lh , $ls){
+ font-size: .8rem;
+ margin: $margin;
+ text-align: center;
+ letter-spacing: $ls;
+ line-height: $lh;
+ width: $width;
+ padding: $padding;
+}

@@ -1,0 +1,14 @@
+@import 'mixin/_font.scss';
+// partialFile mixin
+@import 'mixin/_flexbox.scss';
+@import 'mixin/_color.scss';
+@import 'mixin/_etc.scss';
+@import 'mixin/_mar-wid.scss';
+@import 'mixin/_mq.scss';
+
+// partialFile module
+@import 'module/_body.scss';
+@import 'module/_header.scss';
+@import 'module/_main.scss';
+@import 'module/_animation.scss';
+@import 'module/_nav-menu.scss';

@@ -1,0 +1,23 @@
+@mixin guide-bar {
+ writing-mode: vertical-rl;
+   border-left: .07rem solid #525252;
+   margin-left: 1.5rem;
+   margin-top: 0;
+   padding-top: 2rem;
+   font-size: .5rem;
+   color: #525252;
+}
+
+@mixin shadow-set1 {
+  box-shadow: 2px 4px 6px rgba(78, 78, 78, 0.541);
+
+}
+
+@mixin hover-pre {
+  transition: ease .7s;
+ }
+
+ @mixin hover-after {
+  transition: linear, .3s;
+  transition-duration: .4s;
+ }
